@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isViettel(str) {
+        let regexp = /^(09[7|6|8])|(03[2-9])|086+([0-9]{6,7})\b$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    let arrNumberPhone = ["0359813619","0365221662","0986593822","01654365336"];
+    for (let i= 0 ; i < arrNumberPhone.length; i++){
+        alert(isViettel(arrNumberPhone[i]));
+    }
+</script>
+</body>
+</html>
